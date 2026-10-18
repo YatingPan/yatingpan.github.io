@@ -11,13 +11,15 @@ strong{font-weight:600}
 .skip-link:focus{top:12px}
 .page{display:grid;grid-template-columns:var(--nav-width) minmax(0,1fr);gap:48px;max-width:1560px;margin:0 auto;padding:60px clamp(24px,3vw,52px) 0}
 .profile{position:sticky;top:60px;align-self:start;min-width:0}
+.profile p{text-align:justify;text-justify:inter-word;hyphens:auto}
+.profile .position{width:100%;max-width:none}
 h1{font-size:31px;font-weight:650;letter-spacing:-.85px;line-height:1.2;margin:0 0 6px}
 h1 a{color:#1a2533}
 h1 a:hover{text-decoration:none;color:var(--blue)}
 .name-zh{font-size:18px;color:#68717b;letter-spacing:3px;margin-bottom:23px}
 .position{font-size:14px;line-height:1.6;margin-bottom:10px;font-weight:500;max-width:205px}
 .affiliation{font-size:14px;line-height:1.65;color:var(--muted);margin-bottom:17px}
-.affiliation a{font-weight:550}
+.affiliation a{display:block;font-weight:550}
 .email{font-size:12px;white-space:nowrap}
 .social-links{display:flex;flex-wrap:wrap;gap:5px 15px;max-width:215px;margin-top:13px;font-size:12px}
 .section-nav{display:flex;flex-direction:column;gap:9px;border-left:1px solid var(--rule);margin:35px 0 0;padding:0 0 0 17px;font-size:13px}
