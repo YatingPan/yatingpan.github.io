@@ -22,6 +22,51 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', updateNavigation);
 updateNavigation();
 
+// Each column has its own scroll position, controls, and photo counter.
+(() => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.life-carousel').forEach(carousel => {
+    const gallery = carousel.querySelector('.life-gallery');
+    const slides = [...gallery.querySelectorAll('.life-slide')];
+    const status = carousel.querySelector('.carousel-status');
+    const caption = carousel.querySelector('.carousel-caption');
+    let target = 0;
+    let settle;
+
+    function synchronize() {
+      const index = Math.max(0, Math.min(slides.length - 1, Math.round(gallery.scrollLeft / gallery.clientWidth)));
+      status.textContent = `${index + 1} / ${slides.length}`;
+      caption.textContent = slides[index].querySelector('.life-photo').dataset.label;
+      return index;
+    }
+    function move(step) {
+      clearTimeout(settle);
+      target = (target + step + slides.length) % slides.length;
+      gallery.scrollTo({ left: target * gallery.clientWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+    }
+    carousel.querySelectorAll('[data-carousel-step]').forEach(button => {
+      button.addEventListener('click', () => move(Number(button.dataset.carouselStep)));
+    });
+    gallery.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        move(event.key === 'ArrowLeft' ? -1 : 1);
+      }
+    });
+    gallery.addEventListener('scroll', () => {
+      synchronize();
+      clearTimeout(settle);
+      settle = setTimeout(() => { target = synchronize(); }, 140);
+    }, { passive: true });
+    window.addEventListener('resize', () => {
+      gallery.scrollTo({ left: target * gallery.clientWidth, behavior: 'auto' });
+      synchronize();
+    });
+    carousel.dataset.ready = 'true';
+    synchronize();
+  });
+})();
+
 // Image links remain usable when the native dialog API is unavailable.
 (() => {
   const photos = [...document.querySelectorAll('.life-photo')];
