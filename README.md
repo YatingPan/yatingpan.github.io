@@ -7,7 +7,7 @@ A buildless, responsive single-page academic website for GitHub Pages.
 - `script.js`: optional active-section navigation. Content works without JavaScript.
 - `assets/papers/`: actual paper and project thumbnails. See `ASSETS.md` for provenance.
 
-Content is aligned with the owner's four-page academic CV (October 2026): four published/accepted papers, two refereed DH2026 presentations, two submitted manuscripts, seven research/industry roles, five education/training entries, four teaching/workshop roles, two additional conference presentations, four funded-project contributions, methods/engineering/languages, service and three awards. Submitted manuscripts are explicitly marked under review. ArgumentBot is identified as an acknowledged technical contribution.
+The homepage presents the owner's research profile, published/accepted papers, refereed DH2026 presentations, manuscripts under review, a compact work-experience timeline, complete education and training, teaching/workshops, funded-project contributions, methods/engineering/languages, and a life section. Research details appear with the corresponding papers and projects. Work experience lists the two research-assistant appointments and FunPlus role, with one sentence per appointment. Academic service and awards are omitted at the owner's request. ArgumentBot is identified as an acknowledged technical contribution.
 
 To add a paper, duplicate a `paper` article in `index.html` and update its image, title, authors, venue, summary and links. Add a new year heading when needed.
 

@@ -36,7 +36,7 @@
       <nav class="section-nav" aria-label="On this page">
         <a href="#about" aria-current="location">About</a>
         <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Work experience</a>
         <a href="#education">Education</a>
         <a href="#teaching">Teaching &amp; talks</a>
         <a href="#funded-projects">Funded projects</a>
@@ -126,46 +126,11 @@
       </section>
 
       <section id="experience" aria-labelledby="experience-heading">
-        <h2 id="experience-heading">Research &amp; industry experience</h2>
-        <ol class="timeline experience-timeline">
-          <li id="doctoral-research"><span class="period">Sep 2025<br>– present</span><div><h3>Doctoral Researcher · Peking University</h3><p class="timeline-role">Research Center for Digital Humanities</p><p>Supervisors: <a href="https://www.ai.pku.edu.cn/en/info/1413/1859.htm">Jun Wang</a> and <a href="https://www.ai.pku.edu.cn/en/info/1413/1860.htm">Qi Su</a></p><ul class="experience-list">
-            <li>Collaborate with scholars in classical Chinese and Latin studies to translate research questions and philological knowledge into corpus designs, annotation protocols, evidence-linked representations, and evaluation criteria.</li>
-            <li><strong>SPIRE:</strong> implement cooperating agents for source discovery, annotation, comparison, provenance checking, and argumentative synthesis; connect passage-level evidence with graph communities and cross-context semantic clusters.</li>
-            <li>Design comparisons with retrieval and agentic baselines, controlled ablations, and human/model evaluations of evidence recovery and scholarly argument quality.</li>
-            <li><strong>HistCaliper:</strong> develop scholar-calibrated idea-graph induction and graph representations for studying intellectual communities and long-term conceptual change.</li>
-            <li><strong>Buddhist stylometry:</strong> integrate expert-selected linguistic features, corpus-scale authorship attribution, and close reading of disputed translations.</li>
-            <li><strong>TechMirror, ongoing:</strong> compare LLM responses with cross-national public-opinion surveys and design experiments separating country prediction, persona, advice, and prompt-language effects.</li>
-          </ul></div></li>
-          <li><span class="period">Jun – Aug<br>2025</span><div><h3>Research Assistant · Retinal Image Synthesis</h3><p class="timeline-role">Medical Knowledge &amp; Decision Support Lab, University of Zurich</p><p>SNSF Sinergia VascX project</p><ul class="experience-list">
-            <li>Fine-tuned Stable Diffusion 3.5 with LoRA on UK Biobank retinal images for pathology-conditioned generation and temporal-progression synthesis.</li>
-            <li>Implemented SLURM training workflows using VAE-encoded image representations within restrictions on raw-image transfer.</li>
-            <li>Contributed to collaborative retinal-image research, including the coauthored <a href="https://doi.org/10.1038/s41467-026-77102-1">retinal-aging study in Nature Communications</a>.</li>
-          </ul></div></li>
-          <li><span class="period">Sep 2024<br>– May 2025</span><div><h3>MA Researcher · Interpretable Multimodal Medical AI</h3><p class="timeline-role">Medical Knowledge &amp; Decision Support Lab, University of Zurich</p><p>Supervisor: <a href="https://www.language-and-medicine.uzh.ch/en/members/members/hastings.html">Prof. Janna Hastings</a></p><p class="thesis-title">Master's thesis: “Bridging Medical Image Diagnosis and Linguistic Interpretability: An Anatomical-Saliency Guided VLM for Retinal Diagnosis Explanation.”</p><ul class="experience-list">
-            <li>Developed a retinal-diagnosis explanation pipeline combining diagnostic models, saliency maps, anatomical segmentation, and vision-language models.</li>
-            <li>Worked with Swiss and Chinese ophthalmologists to translate clinical requirements into prompts, explanation datasets, and evaluation protocols.</li>
-            <li>Benchmarked five multimodal language models with evaluation of language quality, clinical evidence, and hallucination; the zero-shot study was published at <a href="https://doi.org/10.3233/SHTI250910">MEDINFO 2025</a>.</li>
-            <li>Fine-tuned LLaVA-OneVision on instruction-following explanation data using SLURM and multi-GPU training, and evaluated technical and clinical quality.</li>
-          </ul></div></li>
-          <li><span class="period">Feb – Dec<br>2024</span><div><h3>Research Assistant · D3 Digital Democracy</h3><p class="timeline-role">Department of Political Science, University of Zurich</p><p>Supervisor: <a href="https://www.ipz.uzh.ch/en/about-us/people/employees/fgilar.html">Prof. Fabrizio Gilardi</a></p><ul class="experience-list">
-            <li>Built a full-stack, real-time deliberation platform with Svelte, Flask, Socket.IO, and PostgreSQL, supporting more than 500 concurrent users.</li>
-            <li>Implemented participant grouping, waiting rooms, experimental conditions, and synchronized interaction logs for controlled online experiments.</li>
-            <li>Integrated GPT-4o for argument mining and automated interventions; connected Prolific recruitment, Qualtrics surveys, and platform records across two experimental waves.</li>
-            <li>Research assistance acknowledged in Vuk, Sarasua, and Gilardi, <a href="https://arxiv.org/abs/2506.17073">“LLM-Based Bot Broadens the Range of Arguments in Online Discussions, Even When Transparently Disclosed as AI”</a> (2025).</li>
-          </ul></div></li>
-          <li><span class="period">2024</span><div><h3>Research Project · Anatomy-Guided Radiology Reporting</h3><p class="timeline-role">Krauthammer Lab, University Hospital Zurich</p><ul class="experience-list">
-            <li>Combined Faster R-CNN anatomical-region detection on Chest ImaGenome with LLaVA-based chest X-ray report generation.</li>
-            <li>Constructed visual instruction-following data, performed multi-GPU LoRA fine-tuning, and evaluated language-generation quality and clinical efficacy.</li>
-          </ul></div></li>
-          <li><span class="period">2024</span><div><h3>Researcher · Digital Transformation Challenge</h3><p class="timeline-role">Digital Society Initiative, University of Zurich</p><ul class="experience-list">
-            <li>Co-developed an error taxonomy and annotation protocol for AI-generated images of human anatomy.</li>
-            <li>Evaluated DALL-E 3 and Stable Diffusion-family models, analyzed inter-rater agreement and error distributions, and contributed to the methods and results of the <a href="https://doi.org/10.7759/cureus.74193">Cureus publication</a>.</li>
-          </ul></div></li>
-          <li><span class="period">Sep 2021<br>– Jun 2022</span><div><h3>Hindi Language Engineer · FunPlus</h3><p class="timeline-role">Language Knowledge Group · Beijing</p><ul class="experience-list">
-            <li>Built a 150,000-sentence Hindi–English parallel corpus with Python data collection, preprocessing, and human-in-the-loop cleaning for noisy and code-switched language.</li>
-            <li>Developed a rule-based Hindi–Roman transcription component and worked with engineers on machine translation and automatic speech recognition through linguistic error analysis.</li>
-            <li>Developed multilingual hate-speech detection rules and statistical filtering for content moderation.</li>
-          </ul></div></li>
+        <h2 id="experience-heading">Work experience</h2>
+        <ol class="timeline">
+          <li><span class="period">Jun – Aug<br>2025</span><div><h3>University of Zurich</h3><p class="timeline-role">Research Assistant · Medical Knowledge &amp; Decision Support Lab</p><p>Retinal image synthesis and analysis for the SNSF Sinergia VascX project.</p></div></li>
+          <li><span class="period">Feb – Dec<br>2024</span><div><h3>University of Zurich</h3><p class="timeline-role">Research Assistant · Department of Political Science</p><p>Experimental infrastructure for LLM-assisted online deliberation, supervised by <a href="https://www.ipz.uzh.ch/en/about-us/people/employees/fgilar.html">Prof. Fabrizio Gilardi</a>.</p></div></li>
+          <li><span class="period">Sep 2021<br>– Jun 2022</span><div><h3>FunPlus · Beijing</h3><p class="timeline-role">Hindi Language Engineer · Language Knowledge Group</p><p>Hindi language technologies for machine translation, speech recognition, and multilingual content moderation.</p></div></li>
         </ol>
       </section>
 
