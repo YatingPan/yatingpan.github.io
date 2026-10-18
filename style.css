@@ -111,3 +111,7 @@ footer a{color:#6d7782}
 @media(max-width:480px){.experience-list{font-size:11.5px;padding-left:14px;line-height:1.75}.timeline .thesis-title{font-size:11px}.manuscript-list h4{font-size:13px}.manuscript-list p{font-size:11.5px}.manuscript-list .authors,.manuscript-list .submission-status{font-size:10.5px}.compact-list{font-size:12px}.project-list h3{font-size:13px}.project-list p{font-size:12px}.project-list .item-meta{font-size:10.5px}.skills-list{grid-template-columns:1fr;gap:4px;font-size:12px}.skills-list dd{margin-bottom:10px}.awards-list li{grid-template-columns:72px minmax(0,1fr);gap:12px;font-size:12px}.award-year{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.paper-media img{transition:none}}
 @media print{.page{display:block;padding:0;max-width:none}.profile{position:static;margin-bottom:24px}.section-nav,.profile-note,.skip-link,footer a{display:none}.identity{display:block}.affiliation br{display:none}.social-links{margin-top:5px}.name-zh{margin-bottom:8px}.paper,.timeline>li{break-inside:avoid}section{margin-bottom:28px}body{font-size:10pt}.paper-media{height:110px}a{color:inherit}}
+
+.teaching-timeline{margin-top:17px}
+.teaching-timeline h4{font-size:14px;font-weight:600;line-height:1.55;letter-spacing:-.1px;margin:0 0 2px}
+@media(max-width:480px){.teaching-timeline h4{font-size:13px}}
