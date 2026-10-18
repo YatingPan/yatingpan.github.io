@@ -12,4 +12,16 @@ All research thumbnails are taken from the corresponding paper or accompanying p
 | `assets/papers/argumentbot.webp` | Study 1 comments per participant, https://arxiv.org/html/2506.17073v1/study1_comments_participant.png; paper by Vuk, Sarasua and Gilardi. Yating Pan is an acknowledged technical contributor. |
 | `assets/papers/anatomy.webp` | Muhr et al. (2024), Figure 1, CC BY 4.0, https://doi.org/10.7759/cureus.74193 |
 
-Life photographs have intentionally been left as empty slots for the owner's own images.
+# Personal photographs
+
+All 13 photographs in `assets/life/` were supplied by Yating Pan for this homepage. They are oriented and resized to a maximum edge of 1280 px, encoded as WebP, and stripped of original metadata for web delivery. Image content is unchanged; thumbnails use CSS cropping, and the photo viewer displays each complete image. Original uploads remain untouched.
+
+| Files | Uploaded photo order | Group |
+| --- | --- | --- |
+| `football-01.webp`, `football-02.webp` | 1–2 | Football |
+| `travel-01.webp` through `travel-08.webp` | 3–10 | Travels |
+| `study-switzerland.webp` | 11 | Studying in Switzerland |
+| `study-india.webp` | 12 | Studying in India; Yating is in the middle, as specified by the owner |
+| `study-china.webp` | 13 | Studying in China |
+
+The India group photograph is shown without thumbnail cropping to keep all three people visible.
