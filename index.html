@@ -38,6 +38,10 @@
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
+        <a href="#teaching">Teaching &amp; talks</a>
+        <a href="#funded-projects">Funded projects</a>
+        <a href="#methods">Methods &amp; languages</a>
+        <a href="#service">Service &amp; awards</a>
         <a href="#life">Beyond research</a>
       </nav>
       <p class="profile-note">AI for humanities research<br>Multimodal NLP · Cultural computing</p>
@@ -46,13 +50,14 @@
     <main>
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
-        <p>I'm a PhD student in Information Science at <a href="https://www.pku.edu.cn/">Peking University</a>, working with Jun Wang and Qi Su at the <a href="https://pkudh.org/">Research Center for Digital Humanities</a>. My research focuses on <strong>AI for humanities research</strong>: building language models and agents that help scholars work with primary sources, connect evidence, and develop interpretations.</p>
-        <p>More broadly, I'm interested in <strong>multimodal NLP</strong>, <strong>evidence-grounded reasoning</strong>, and <strong>cultural computing</strong>. Before joining PKU, I received my M.A. in Computational Linguistics and Language Technology from the University of Zurich, where I worked on explainable medical AI and LLM-assisted online discussions.</p>
-        <div class="recent-note"><span class="note-date">2026</span><p><a href="https://arxiv.org/abs/2605.30947">SPIRE</a> accepted to <strong>EMNLP 2026 Main</strong>. Two papers accepted to <strong>DH2026</strong>.</p></div>
+        <p>I'm a PhD student in Information Science at <a href="https://www.pku.edu.cn/">Peking University</a> and the <a href="https://pkudh.org/">Research Center for Digital Humanities</a>, supervised by <a href="https://www.ai.pku.edu.cn/en/info/1413/1859.htm">Prof. Jun Wang</a> and advised on research by <a href="https://www.ai.pku.edu.cn/en/info/1413/1860.htm">Prof. Qi Su</a>. My research focuses on <strong>AI for humanities research</strong>: building language models and agents that help scholars work with primary sources, connect evidence, and develop interpretations.</p>
+        <p>My work brings together <strong>research agents and retrieval</strong>, <strong>knowledge graphs and cultural computing</strong>, and <strong>interpretable multimodal AI</strong>. I collaborate with domain experts to translate scholarly and clinical knowledge into annotation protocols, computational representations, and evaluation criteria. Current projects span evidence-grounded scholarship, historical idea modeling, Buddhist authorship attribution, and LLM values and stances.</p>
+        <p>Previously, I received my M.A. in Computational Linguistics and Language Technology, with a minor in Informatics, from the <a href="https://www.uzh.ch/en.html">University of Zurich</a>. My master's research was supervised by <a href="https://www.language-and-medicine.uzh.ch/en/members/members/hastings.html">Prof. Janna Hastings</a> and focused on interpretable vision-language models for retinal diagnosis. I also worked with <a href="https://www.ipz.uzh.ch/en/about-us/people/employees/fgilar.html">Prof. Fabrizio Gilardi</a> on the infrastructure for LLM-assisted online deliberation. Before computational linguistics, I studied Hindi language and literature.</p>
+        <div class="recent-note"><span class="note-date">2026</span><p><a href="https://arxiv.org/abs/2605.30947">SPIRE</a> accepted to <strong>EMNLP 2026 Main</strong>; our <a href="https://doi.org/10.1038/s41467-026-77102-1">retinal-aging study</a> published in <strong>Nature Communications</strong>; two refereed contributions at <strong>DH2026</strong>.</p></div>
       </section>
 
       <section id="research" aria-labelledby="research-heading">
-        <div class="section-heading"><h2 id="research-heading">Selected research</h2><span class="section-note">Publications &amp; projects</span></div>
+        <div class="section-heading"><h2 id="research-heading">Publications &amp; research</h2><span class="section-note">2024–2026</span></div>
         <div class="research-year"><span>2026</span><span class="year-rule"></span></div>
         <article class="paper" id="spire">
           <a class="paper-main" href="https://arxiv.org/abs/2605.30947">
@@ -62,10 +67,18 @@
           <div class="paper-links"><a href="https://arxiv.org/abs/2605.30947">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/YatingPan/SPIRE">Code &amp; data <span aria-hidden="true">↗</span></a></div>
         </article>
 
+        <article class="paper" id="retinal-aging">
+          <a class="paper-main" href="https://doi.org/10.1038/s41467-026-77102-1">
+            <div class="paper-media"><img src="assets/papers/retinal-aging.webp" width="1000" height="503" loading="lazy" alt="Study-overview figure from the retinal-aging paper: RETFound fine-tuning, retinal age gap, downstream analyses, and external validation."></div>
+            <div class="paper-text"><div class="paper-venue">Nature Communications 2026 <span>· 17, 10185</span></div><h3>Deep Learning Aging Marker from Retinal Images Unveils Sex-Specific Clinical and Genetic Signatures</h3><p class="authors">Olga Trofimova, Leah Böttger, Sacha Bors, <strong>Yating Pan</strong>, et al.</p><p class="paper-summary">A retinal foundation model connects the retinal age gap with clinical and genetic signatures of aging, revealing sex-specific patterns across large population cohorts.</p></div>
+          </a>
+          <div class="paper-links"><a href="https://doi.org/10.1038/s41467-026-77102-1">Paper <span aria-hidden="true">↗</span></a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13612558/">Open access <span aria-hidden="true">↗</span></a><a href="https://github.com/ot710/retinal-age">Code <span aria-hidden="true">↗</span></a></div>
+        </article>
+
         <article class="paper">
           <a class="paper-main" href="https://dh-daejeon.vercel.app/abs/357?full=1">
             <div class="paper-media"><img src="assets/papers/stylometry.webp" width="1000" height="446" loading="lazy" alt="Expert-in-the-loop pipeline for interpretable Buddhist translator stylometry."></div>
-            <div class="paper-text"><div class="paper-venue">DH2026 <span>· Long Paper</span></div><h3>An Interpretable Stylometric Framework for Early Chinese Buddhist Translator Styles: A Case Study on the Attribution of Disputed Works of An Shigao</h3><p class="authors"><strong>Yating Pan</strong>, Xinyue Zhang, Jun Wang</p><p class="paper-summary">Expert-guided linguistic features make translator styles and disputed authorship in early Chinese Buddhist texts interpretable and traceable.</p></div>
+            <div class="paper-text"><div class="paper-venue">DH2026 <span>· Refereed long-paper presentation</span></div><h3>An Interpretable Stylometric Framework for Early Chinese Buddhist Translator Styles: A Case Study on the Attribution of Disputed Works of An Shigao</h3><p class="authors"><strong>Yating Pan</strong>, Xinyue Zhang, Jun Wang</p><p class="paper-summary">Expert-guided linguistic features make translator styles and disputed authorship in early Chinese Buddhist texts interpretable and traceable.</p></div>
           </a>
           <div class="paper-links"><a href="https://dh-daejeon.vercel.app/abs/357?full=1">Abstract <span aria-hidden="true">↗</span></a></div>
         </article>
@@ -73,7 +86,7 @@
         <article class="paper">
           <a class="paper-main" href="https://dh-daejeon.vercel.app/abs/197?full=1">
             <div class="paper-media"><img src="assets/papers/buddhist-gis.webp" width="1000" height="615" loading="lazy" alt="Maps of Buddhist funerary practices and relic veneration across historical periods in China."></div>
-            <div class="paper-text"><div class="paper-venue">DH2026 <span>· Short Paper</span></div><h3>Quantifying the Institutional Localization of Buddhism: GIS Analysis of Buddhist Funerary Practices and Relic Veneration in Medieval China</h3><p class="authors"><strong>Yating Pan</strong>, Xingru Hou, Jun Wang</p><p class="paper-summary">Combining knowledge-guided LLM extraction with GIS to trace the changing geography of Buddhist funerary and relic practices.</p></div>
+            <div class="paper-text"><div class="paper-venue">DH2026 <span>· Refereed short-paper presentation</span></div><h3>Quantifying the Institutional Localization of Buddhism: GIS Analysis of Buddhist Funerary Practices and Relic Veneration in Medieval China</h3><p class="authors"><strong>Yating Pan</strong>, Xingru Hou, Jun Wang</p><p class="paper-summary">Combining knowledge-guided LLM extraction with GIS to trace the changing geography of Buddhist funerary and relic practices.</p></div>
           </a>
           <div class="paper-links"><a href="https://dh-daejeon.vercel.app/abs/197?full=1">Abstract <span aria-hidden="true">↗</span></a></div>
         </article>
@@ -103,24 +116,112 @@
           </a>
           <div class="paper-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11663238/">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/hastingslab-org/ai-human-images">Code &amp; data <span aria-hidden="true">↗</span></a></div>
         </article>
+        <div class="manuscripts" aria-labelledby="manuscripts-heading">
+          <h3 class="subsection-heading" id="manuscripts-heading">Manuscripts under review</h3>
+          <ol class="manuscript-list">
+            <li><h4>From Close Reading to Corpus-Scale Attribution: Distilling Philological Knowledge for Authorship Attribution of Early Chinese Buddhist Scriptures</h4><p class="authors"><strong>Yating Pan</strong>, X. Zhang, X. Hou, Jun Wang</p><p class="submission-status">Submitted to iConference 2027 · Full research paper</p><p>Distilling philological expertise into a corpus-scale attribution workflow for early Chinese Buddhist scriptures.</p></li>
+            <li><h4>HistCaliper: Scholar-Calibrated Idea Graph Induction for Auditable Historical Measurement</h4><p class="authors"><strong>Yating Pan</strong> et al.</p><p class="submission-status">Submitted to AAAI 2027</p><p>Operationalizing scholar-defined concept protocols in idea-graph induction to study intellectual communities and long-term conceptual change.</p></li>
+          </ol>
+        </div>
       </section>
 
       <section id="experience" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Research &amp; industry experience</h2>
-        <ol class="timeline">
-          <li><span class="period">2024 – 2025</span><div><h3>University of Zurich &amp; University of St. Gallen</h3><p class="timeline-role">Medical Knowledge &amp; Decision Support Lab</p><p>Research on interpretable multimodal models, retinal diagnosis explanations, and medical image synthesis.</p></div></li>
-          <li><span class="period">2024</span><div><h3>University of Zurich</h3><p class="timeline-role">Research Assistant · Department of Political Science</p><p>Development of an LLM-assisted discussion platform and support for online behavioral experiments.</p></div></li>
-          <li><span class="period">2021 – 2022</span><div><h3>FunPlus</h3><p class="timeline-role">Hindi Language Engineer · Beijing</p><p>Hindi machine translation, speech recognition, and language technologies for multilingual products.</p></div></li>
+        <ol class="timeline experience-timeline">
+          <li id="doctoral-research"><span class="period">Sep 2025<br>– present</span><div><h3>Doctoral Researcher · Peking University</h3><p class="timeline-role">Research Center for Digital Humanities</p><p>Supervisor: <a href="https://www.ai.pku.edu.cn/en/info/1413/1859.htm">Jun Wang</a> · Research advisor: <a href="https://www.ai.pku.edu.cn/en/info/1413/1860.htm">Qi Su</a></p><ul class="experience-list">
+            <li>Collaborate with scholars in classical Chinese and Latin studies to translate research questions and philological knowledge into corpus designs, annotation protocols, evidence-linked representations, and evaluation criteria.</li>
+            <li><strong>SPIRE:</strong> implement cooperating agents for source discovery, annotation, comparison, provenance checking, and argumentative synthesis; connect passage-level evidence with graph communities and cross-context semantic clusters.</li>
+            <li>Design comparisons with retrieval and agentic baselines, controlled ablations, and human/model evaluations of evidence recovery and scholarly argument quality.</li>
+            <li><strong>HistCaliper:</strong> develop scholar-calibrated idea-graph induction and graph representations for studying intellectual communities and long-term conceptual change.</li>
+            <li><strong>Buddhist stylometry:</strong> integrate expert-selected linguistic features, corpus-scale authorship attribution, and close reading of disputed translations.</li>
+            <li><strong>TechMirror, ongoing:</strong> compare LLM responses with cross-national public-opinion surveys and design experiments separating country prediction, persona, advice, and prompt-language effects.</li>
+          </ul></div></li>
+          <li><span class="period">Jun – Aug<br>2025</span><div><h3>Research Assistant · Retinal Image Synthesis</h3><p class="timeline-role">Medical Knowledge &amp; Decision Support Lab, University of Zurich</p><p>SNSF Sinergia VascX project</p><ul class="experience-list">
+            <li>Fine-tuned Stable Diffusion 3.5 with LoRA on UK Biobank retinal images for pathology-conditioned generation and temporal-progression synthesis.</li>
+            <li>Implemented SLURM training workflows using VAE-encoded image representations within restrictions on raw-image transfer.</li>
+            <li>Contributed to collaborative retinal-image research, including the coauthored <a href="https://doi.org/10.1038/s41467-026-77102-1">retinal-aging study in Nature Communications</a>.</li>
+          </ul></div></li>
+          <li><span class="period">Sep 2024<br>– May 2025</span><div><h3>MA Researcher · Interpretable Multimodal Medical AI</h3><p class="timeline-role">Medical Knowledge &amp; Decision Support Lab, University of Zurich</p><p>Supervisor: <a href="https://www.language-and-medicine.uzh.ch/en/members/members/hastings.html">Prof. Janna Hastings</a></p><p class="thesis-title">Master's thesis: “Bridging Medical Image Diagnosis and Linguistic Interpretability: An Anatomical-Saliency Guided VLM for Retinal Diagnosis Explanation.”</p><ul class="experience-list">
+            <li>Developed a retinal-diagnosis explanation pipeline combining diagnostic models, saliency maps, anatomical segmentation, and vision-language models.</li>
+            <li>Worked with Swiss and Chinese ophthalmologists to translate clinical requirements into prompts, explanation datasets, and evaluation protocols.</li>
+            <li>Benchmarked five multimodal language models with evaluation of language quality, clinical evidence, and hallucination; the zero-shot study was published at <a href="https://doi.org/10.3233/SHTI250910">MEDINFO 2025</a>.</li>
+            <li>Fine-tuned LLaVA-OneVision on instruction-following explanation data using SLURM and multi-GPU training, and evaluated technical and clinical quality.</li>
+          </ul></div></li>
+          <li><span class="period">Feb – Dec<br>2024</span><div><h3>Research Assistant · D3 Digital Democracy</h3><p class="timeline-role">Department of Political Science, University of Zurich</p><p>Supervisor: <a href="https://www.ipz.uzh.ch/en/about-us/people/employees/fgilar.html">Prof. Fabrizio Gilardi</a></p><ul class="experience-list">
+            <li>Built a full-stack, real-time deliberation platform with Svelte, Flask, Socket.IO, and PostgreSQL, supporting more than 500 concurrent users.</li>
+            <li>Implemented participant grouping, waiting rooms, experimental conditions, and synchronized interaction logs for controlled online experiments.</li>
+            <li>Integrated GPT-4o for argument mining and automated interventions; connected Prolific recruitment, Qualtrics surveys, and platform records across two experimental waves.</li>
+            <li>Research assistance acknowledged in Vuk, Sarasua, and Gilardi, <a href="https://arxiv.org/abs/2506.17073">“LLM-Based Bot Broadens the Range of Arguments in Online Discussions, Even When Transparently Disclosed as AI”</a> (2025).</li>
+          </ul></div></li>
+          <li><span class="period">2024</span><div><h3>Research Project · Anatomy-Guided Radiology Reporting</h3><p class="timeline-role">Krauthammer Lab, University Hospital Zurich</p><ul class="experience-list">
+            <li>Combined Faster R-CNN anatomical-region detection on Chest ImaGenome with LLaVA-based chest X-ray report generation.</li>
+            <li>Constructed visual instruction-following data, performed multi-GPU LoRA fine-tuning, and evaluated language-generation quality and clinical efficacy.</li>
+          </ul></div></li>
+          <li><span class="period">2024</span><div><h3>Researcher · Digital Transformation Challenge</h3><p class="timeline-role">Digital Society Initiative, University of Zurich</p><ul class="experience-list">
+            <li>Co-developed an error taxonomy and annotation protocol for AI-generated images of human anatomy.</li>
+            <li>Evaluated DALL-E 3 and Stable Diffusion-family models, analyzed inter-rater agreement and error distributions, and contributed to the methods and results of the <a href="https://doi.org/10.7759/cureus.74193">Cureus publication</a>.</li>
+          </ul></div></li>
+          <li><span class="period">Sep 2021<br>– Jun 2022</span><div><h3>Hindi Language Engineer · FunPlus</h3><p class="timeline-role">Language Knowledge Group · Beijing</p><ul class="experience-list">
+            <li>Built a 150,000-sentence Hindi–English parallel corpus with Python data collection, preprocessing, and human-in-the-loop cleaning for noisy and code-switched language.</li>
+            <li>Developed a rule-based Hindi–Roman transcription component and worked with engineers on machine translation and automatic speech recognition through linguistic error analysis.</li>
+            <li>Developed multilingual hate-speech detection rules and statistical filtering for content moderation.</li>
+          </ul></div></li>
         </ol>
       </section>
 
       <section id="education" aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>
         <ol class="timeline education-timeline">
-          <li><span class="period">2025 – present</span><div><h3>Peking University</h3><p class="timeline-role">PhD in Information Science</p><p>Department of Information Management<br>Research Center for Digital Humanities</p></div></li>
-          <li><span class="period">2022 – 2025</span><div><h3>University of Zurich</h3><p class="timeline-role">M.A. in Computational Linguistics and Language Technology</p><p>Minor in Informatics · Additional B.Sc. Informatics core coursework, 2022–2023</p></div></li>
-          <li><span class="period">2017 – 2021</span><div><h3>Beijing International Studies University</h3><p class="timeline-role">B.A. in Hindi and Indian Studies</p><p>Hindi diploma studies at Mahatma Gandhi International Hindi University, India, in 2020 · CSC–ICCR scholarship</p></div></li>
+          <li><span class="period">Sep 2025<br>– present</span><div><h3>Peking University</h3><p class="timeline-role">PhD in Information Science · Digital Humanities</p><p>Department of Information Management · Research Center for Digital Humanities</p><p>Supervisor: <a href="https://www.ai.pku.edu.cn/en/info/1413/1859.htm">Prof. Jun Wang</a><br>Research advisor: <a href="https://www.ai.pku.edu.cn/en/info/1413/1860.htm">Prof. Qi Su</a></p></div></li>
+          <li><span class="period">Sep 2022<br>– Jun 2025</span><div><h3>University of Zurich</h3><p class="timeline-role">M.A. in Computational Linguistics and Language Technology</p><p>Minor in Informatics · GPA: <strong>5.4/6.0</strong><br>Master's supervisor: <a href="https://www.language-and-medicine.uzh.ch/en/members/members/hastings.html">Prof. Janna Hastings</a></p><p><strong>Additional CS preparation:</strong> completed 60 ECTS of B.Sc.-level Informatics core coursework alongside the MA: Software Engineering, Software Engineering Lab, Software Construction, Database Systems, People-Oriented Computing, and Computer Engineering and Software Systems.</p><p><strong>Selected advanced coursework:</strong> Deep Learning (6/6), Speech Technology (6/6), Large Language Models (5.5/6), and Machine Learning for NLP (5.5/6).</p></div></li>
+          <li><span class="period">2023</span><div><h3>University of Oxford, UK</h3><p class="timeline-role">Machine Learning Summer School</p><p>Machine learning in healthcare; NLP in finance.</p></div></li>
+          <li><span class="period">2020</span><div><h3>Mahatma Gandhi International Hindi University, India</h3><p class="timeline-role">Diploma in Hindi and Indian Studies</p><p>CSC–ICCR exchange.</p></div></li>
+          <li><span class="period">Sep 2017<br>– Jun 2021</span><div><h3>Beijing International Studies University</h3><p class="timeline-role">B.A. in Hindi Language and Literature</p><p>GPA: <strong>3.9/4.0</strong></p></div></li>
         </ol>
+      </section>
+
+      <section id="teaching" aria-labelledby="teaching-heading">
+        <h2 id="teaching-heading">Teaching &amp; invited workshops</h2>
+        <ol class="timeline">
+          <li><span class="period">Jul 2026</span><div><h3>Lead Instructor · 5th DHEAC Annual International Conference</h3><p class="timeline-role">Ewha Womans University · Seoul, South Korea</p><p>“From Humanities Materials to Intelligent Insight.” Agent-assisted knowledge-graph and table extraction, research assistants, and web-application prototyping.</p></div></li>
+          <li><span class="period">Jan 2026</span><div><h3>Invited Instructor · East Asian Digital Humanities Platform Workshop</h3><p class="timeline-role">Hallym University &amp; Sungkyunkwan University · South Korea</p><p>Hands-on teaching on classical-text knowledge graphs, multimodal information extraction, and research-agent construction.</p></div></li>
+          <li><span class="period">Dec 2025</span><div><h3>Lead Instructor · Inner Mongolia Normal University</h3><p>“From Material to Insight: Digital Humanities Practice.”</p></div></li>
+          <li><span class="period">Sep 2025<br>– Jan 2026</span><div><h3>Teaching Assistant · Peking University</h3><p class="timeline-role">Intelligent Philology and Digital Humanities Project Practicum</p><p>Prepared and delivered teaching on knowledge graphs, social network analysis, and GIS; graded assignments and assessed student presentations.</p></div></li>
+        </ol>
+        <h3 class="subsection-heading">Additional conference presentations</h3>
+        <ul class="compact-list">
+          <li><strong>DHEAC 2026, Seoul.</strong> “Stylometric Modeling and Attribution of Early Chinese Buddhist Translators: An Expert-Knowledge-Enhanced Quantitative Approach.” Oral presentation; no proceedings publication.</li>
+          <li><strong>MEDINFO 2025, Taipei.</strong> “Enhancing Interpretability of Ocular Disease Diagnosis: A Zero-Shot Study of Multimodal Large Language Models.” Oral presentation.</li>
+        </ul>
+      </section>
+
+      <section id="funded-projects" aria-labelledby="funded-projects-heading">
+        <h2 id="funded-projects-heading">Contributions to funded projects</h2>
+        <ul class="project-list">
+          <li><h3>Knowledge Graph of the History of Chinese Confucian Scholarship</h3><p class="item-meta">NSFC Major International Joint Research Project · Peking University · 2025–present</p><p>Knowledge organization and graph construction.</p></li>
+          <li><h3>Cross-Context Barrier-Free Interaction Technology for Ethnic Minority Regions</h3><p class="item-meta">National Key R&amp;D Programme · Peking University · 2025–present</p><p>Multilingual resources and cross-context knowledge processing.</p></li>
+          <li><h3>VascX</h3><p class="item-meta">SNSF Sinergia project · University of Zurich &amp; University of Lausanne · 2024–2025</p><p>Retinal-image analysis and diffusion-based synthesis.</p></li>
+          <li><h3>D3 Digital Democracy</h3><p class="item-meta">SNSF Sinergia and ERC-funded research · University of Zurich · 2024</p><p>Experimental infrastructure and language-model agents.</p></li>
+        </ul>
+      </section>
+
+      <section id="methods" aria-labelledby="methods-heading">
+        <h2 id="methods-heading">Methods, engineering &amp; languages</h2>
+        <dl class="skills-list">
+          <dt>Methods</dt><dd>Research-agent design and evaluation; retrieval-augmented generation; knowledge graphs and ontologies; expert-guided annotation; stylometry; GIS and network analysis; multimodal model training and evaluation.</dd>
+          <dt>Engineering</dt><dd>Python, PyTorch, R, Java, JavaScript/TypeScript, PostgreSQL; SLURM and multi-GPU LoRA fine-tuning; Flask, Svelte, React, Socket.IO; Git and LaTeX.</dd>
+          <dt>Languages</dt><dd>Chinese (native); English (fluent; TOEFL 105); Hindi (fluent); German (intermediate); classical Chinese (research reading).</dd>
+        </dl>
+      </section>
+
+      <section id="service" aria-labelledby="service-heading">
+        <h2 id="service-heading">Academic service &amp; awards</h2>
+        <p class="service-copy"><strong>Peer review:</strong> PLOS Digital Health.</p>
+        <ul class="compact-list awards-list">
+          <li><span class="award-year">2019</span><span>CSC–ICCR Exchange Scholarship to India</span></li>
+          <li><span class="award-year">2018–2019</span><span>National Scholarship</span></li>
+          <li><span class="award-year">2017–2018</span><span>Beijing Outstanding Student</span></li>
+        </ul>
       </section>
 
       <section id="life" aria-labelledby="life-heading">
