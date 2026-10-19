@@ -23,3 +23,11 @@ Desktop layout uses the available page width up to 1560 px. Paragraphs and skill
 No build step or external JavaScript/font dependencies are required. GitHub Pages serves the repository root.
 
 The Collaborative projects section explicitly describes contributions to shared research projects. Profile keywords: Computational Linguistics; Digital Humanities; Multilingual & Multimodal NLP.
+
+## Search discoverability
+
+- The canonical homepage is `https://yatingpan.github.io/`.
+- `robots.txt` allows crawling and points to `sitemap.xml`; the sitemap lists the canonical homepage once. Section fragments are not separate pages.
+- The HTML head includes a bilingual name, author metadata, and `ProfilePage`/`Person` JSON-LD. Identity links refer to the same public profiles linked in the visible page.
+- Keep the sitemap last-modified date aligned with significant page changes. A sitemap or structured data does not guarantee indexing or ranking.
+- Google Search Console must be verified by the owner. Use a URL-prefix property for the exact HTTPS homepage and an owner-provided HTML verification tag or file. Never add a fabricated verification token. After verification, inspect the homepage URL, request indexing, and submit `sitemap.xml`.

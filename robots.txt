@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yatingpan.github.io/sitemap.xml
