@@ -18,7 +18,7 @@ Beyond research uses one row of three independently controlled photo carousels o
 
 To add personal photos, add an optimized image to `assets/life/` and duplicate a `life-slide` block in the relevant gallery. Update the slide label, image dimensions, alt text, accessible link label, `data-label`, and `data-caption`. The viewer supports previous/next buttons, arrow keys, Escape, and backdrop dismissal.
 
-Desktop layout uses the available page width up to 1560 px. Paragraphs and skills descriptions use justified alignment with automatic hyphenation. Languages include German (B1), Classical Chinese (reading), and Latin (currently learning).
+Desktop layout uses the available page width up to 1560 px. Paragraphs and skills descriptions use justified alignment with automatic hyphenation. The skills section follows the owner's latest CV, with AI & ML, Programming & Engineering, and Languages categories. Languages include Chinese (native), English and Hindi (fluent), German (B1), and Classical Chinese (research).
 
 No build step or external JavaScript/font dependencies are required. GitHub Pages serves the repository root.
 
